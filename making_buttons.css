@@ -385,7 +385,173 @@ div.button3:hover {
 	color: rgb(31,207,204);
 }
 
+/********** Button 10 ********************/
 
+.button-10 {
+	position: relative;
+	float: left;
+	height: 300px;
+	width: 400px;
+	border: 2px solid black;
+	margin: 10px;
+	margin-left: 18px;
+	background-color: #1FCFCC;
+	overflow: hidden;
+}
 
+.block1-10 {
+	/*top block*/
+	position: absolute;
+	top: -150px;
+	height: 150px;
+	width: 400px;
+	background-color: #ED5C5F;
+	transition: 400ms;
+}
 
+.button-10:hover .block1-10 {
+	/*top block*/
+	top: 0px;
+	transition: 400ms;
+}
 
+.block2-10 {
+	/*bottom block*/
+	position: absolute;
+	top: 0px;
+	height: 150px;
+	width: 400px;
+	background-color: #144661;
+	transition: 400ms;
+}
+
+.button-10:hover .block2-10 {
+	/*bottom block*/
+	top: 150px;
+	transition: 400ms;
+}
+
+.hold-10 {
+	position: absolute;
+	top: 50px;
+	left: 40px;
+	font-size: 115px;
+	font-weight: bold;
+	color: #ED5C5F;
+}
+
+.release-10 {
+	position: absolute;
+	bottom: -20px;
+	font-size: 115px;
+	font-weight: bold;
+	color: #1FCFCC;
+}
+
+/********** Button 11 ********************/
+
+@keyframes redblockmove {
+	0% { -moz-transform: translate(0,0);}
+	25%{ -moz-transform: translate(0,150px);}
+	40%{ -moz-transform: translate(0,150px);}
+	75%{ -moz-transform: translate(405px,150px);}
+	76%{ -moz-transform: translate(405px,0);}
+	77%{ -moz-transform: translate(0,0);}
+	100%{ -moz-transform: translate(0,0);}
+}
+
+@keyframes redtextmove {
+	0% { -moz-transform: translate(0,0);}
+	25%{ -moz-transform: translate(0,0);}
+	26%{ -moz-transform: translate(0,-150px);}
+	100%{ -moz-transform: translate(0,-150px);}
+}
+
+@keyframes blueblockmove {
+	0% { -moz-transform: translate(0,0);}
+	25%{ -moz-transform: translate(400px,0);}
+	40%{ -moz-transform: translate(400px,0);}
+	75%{ -moz-transform: translate(400px,150px);}
+	76%{ -moz-transform: translate(0,150px);}
+	77%{ -moz-transform: translate(0,0);}
+	100%{ -moz-transform: translate(0,0);}
+}
+
+@keyframes bluetextmove {
+	0% { -moz-transform: translate(0,0);}
+	25%{ -moz-transform: translate(400px,0);}
+	100%{ -moz-transform: translate(400px,0);}
+}
+
+.button-11 {
+	float: left;
+	position: relative;
+	height: 300px;
+	width: 400px;
+	border: 2px solid black;
+	margin: 10px;
+	background-color: #144661;
+	overflow: hidden;
+
+}
+
+.red-block {
+	position: absolute;
+	height: 150px;
+	width: 400px;
+	top: -150px;
+	background-color: #ED5C5F;
+}
+
+.button-11:hover .red-block {
+	animation-name: redblockmove;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+.blue-block {
+	position: absolute;
+	height: 150px;
+	width: 400px;
+	left: -400px;
+	top: 150px;
+	background-color: #1FCFCC;
+}
+
+.button-11:hover .blue-block {
+	animation-name: blueblockmove;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+.hold-11 {
+	position: absolute;
+	top: 25px;
+	left: 40px;
+	font-size: 115px;
+	font-weight: bold;
+	color: #ED5C5F;
+	transition: 1s;
+}
+
+.button-11:hover .hold-11 {
+	animation-name: redtextmove;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+.release-11 {
+	position: absolute;
+	bottom: 15px;
+	left: -400px;
+	font-size: 115px;
+	font-weight: bold;
+	color: #1FCFCC;
+	transition: 1s;
+}
+
+.button-11:hover .release-11 {
+	animation-name: bluetextmove;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}

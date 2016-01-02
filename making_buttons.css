@@ -1,0 +1,46 @@
+/********** Button 1 ****************/ 
+.button1 {
+	width: 400px;
+	height: 300px;
+	background-color: black;
+	margin: 10px;
+	float: left;
+	transition: 1s;
+	border: 6px solid rgba(0,0,0,0);
+
+	text-align: center;
+	line-height: 300px;
+	font-size: 60px;
+	color: #ED5C5F;
+}
+
+div.button1:hover {
+	background-color: white;
+	transition: 1s;
+	border: 6px solid rgba(0,0,0,1)
+}
+
+/********** Button 2 ******************/
+
+.button2 {
+	width: 400px;
+	height: 300px;
+	background-color: white;
+	margin: 10px;
+	float: left;
+	transition: 200ms;
+	border: 2px solid rgba(0,0,0,1);
+
+	text-align: center;
+	line-height: 300px;
+	font-size: 60px;
+	font-weight: bold;
+	color: #ED5C5F;
+}
+
+.button2:hover {
+	transition: 300ms;
+	color: #1FCFCC;
+	font-size: 10px;
+
+}

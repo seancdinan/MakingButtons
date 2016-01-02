@@ -1,3 +1,7 @@
+body {
+	margin: 0;
+}
+
 /********** Button 1 ********************/ 
 .button1 {
 	width: 400px;
@@ -204,4 +208,184 @@ div.button3:hover {
 	animation-direction: normal;
 	animation-timing-function: cubic-bezier(.95,.03,.67,.63);
 }
+
+/********** Button 6 ********************/
+
+.button6 {
+	float: left;
+	margin: 10px;
+	margin-left: 18px;
+	height: 240px;
+	width:  400px;
+	background-color: #144661;
+	border: 2px solid black;
+	
+	font-weight: bold;
+	font-size: 70px;
+	line-height: 60px;
+	padding-top: 60px;
+	transition: 600ms;
+	padding-left: 0px;
+}
+
+.button6:hover {
+	transition: 600ms;
+	padding-left: 185px;
+	width: 215px;
+}
+
+/********** Button 7 ********************/
+
+.button7 {
+	position: relative;
+	float: left;
+	height: 300px;
+	width: 400px;
+	margin: 10px;
+	border: 2px solid black;
+	overflow: hidden;
+}
+
+.burano {
+	font-size: 70px;
+	font-weight: bold;
+	position: absolute;
+	top: -70px;
+	left: 0px;
+	transition: 400ms;
+	color: rgba(31,207,204,0);
+}
+
+.img7 {
+	transition: 700ms;
+}
+
+.button7:hover .img7 {
+	filter: grayscale(80%) brightness(30%);
+	transition: 500ms;
+}
+
+.button7:hover .burano {
+	top: 230px;
+	transition: 400ms;
+	transition-timing-function: ease-out;
+	color: rgba(31,207,204,1);
+}
+
+.visiting {
+	font-size: 70px;
+	font-weight: bold;
+	position: absolute;
+	top: 170px;
+	left: 400px;
+	transition: 500ms;
+	color: rgba(237,92,95,0);
+}
+
+.button7:hover .visiting {
+	left: 0px;
+	transition: 500ms;
+	color: rgba(237,92,95,1);
+}
+
+/********** Button 8 ********************/
+
+.button8 {
+	position: relative;
+	float: left;
+	height: 300px;
+	width: 400px;
+	border: 2px solid black;
+	margin: 10px;
+	background-color: rgb(31,207,204);
+	transition: 300ms;
+}
+
+.button8:hover {
+	background-color: rgb(127,240,182);
+	transition: 300ms;
+}
+
+.hovering {
+	position: absolute;
+	top: 80px;
+	font-size: 115px;
+	font-weight: bold;
+	color: rgba(127,240,182,1);
+	transition: 300ms;
+}
+
+.button8:hover .hovering {
+	color: rgba(127,240,182,0);	
+	transition: 300ms;
+}
+
+.release {
+	position: absolute;
+	top: 80px;
+	font-size: 115px;
+	font-weight: bold;
+	color: rgba(31,207,204,0);
+	transition: 300ms;
+}
+
+.button8:hover .release {
+	color: rgba(31,207,204,1);
+	transition: 300ms;
+}
+
+/********** Button 9 ********************/
+
+.button9 {
+	position: relative;
+	float: left;
+	height: 300px;
+	width: 400px;
+	border: 2px solid black;
+	margin: 10px;
+	background-color: rgb(31,207,204);
+	overflow: hidden;
+}
+
+.colorblock {
+	position: absolute;
+	height: 300px;
+	width: 400px;
+	top: -300px;
+	background-color: rgb(237,92,95);
+	transition: 500ms;
+}
+.button9:hover .colorblock {
+	top: 0px;
+	transition: 500ms;
+}
+
+.hover9 {
+	position: absolute;
+	top: 95px;
+	left: 40px;
+	font-size: 115px;
+	font-weight: bold;
+	color: rgb(237,92,95);
+}
+
+.release9_a {
+	position: absolute;
+	bottom: -20px;
+	font-size: 115px;
+	font-weight: bold;
+	color: rgb(31,207,204);
+}
+
+.release9_b {
+	position: absolute;
+	top: 0px;
+	font-size: 115px;
+	font-weight: bold;
+	color: rgb(31,207,204);
+}
+
+
+
+
 
